@@ -4,6 +4,8 @@ public abstract class Duck {
 	protected QuackBehavior quackBehavior;
 	protected FlyBehavior flyBehavior;
 
+	public abstract void dispaly();
+
 	public void performQuack() {
 		quackBehavior.quack();
 	}
@@ -23,7 +25,5 @@ public abstract class Duck {
 	public void setQuackBehavior(QuackBehavior qb) {
 		this.quackBehavior = qb;
 	}
-
-	public abstract void dispaly();
 
 }
